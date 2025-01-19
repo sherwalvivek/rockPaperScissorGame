@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        @import url("style1.css");
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Welcome to Rock, Paper, Scissor Game</h1>
+        <div id="prg">
+            <div id="prgclr">
+            </div>
+        </div>
+        <p id="para"></p>
+    </div>
+    <script>
+        var cnt =0;
+        function loadprg(){
+            var jprg = document.getElementById("prgclr");
+            jprg.style.width= `${cnt}px`;
+            cnt++;
+            var count =Math.round(cnt/7);
+            document.getElementById("para").innerHTML=`${count}%`;
+            if(cnt >= 700){
+                clearInterval(prgtimeset);
+                window.location.href="gameEntry.html";
+            }
+        }
+        loadprg();
+        var prgtimeset = setInterval(loadprg , 10);
+        
+    </script>
+</body>
+</html>

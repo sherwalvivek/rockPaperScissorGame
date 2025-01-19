@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Game</title>
+    <style>
+        @import url("style1.css");
+    </style>
+</head>
+<body>
+    <div class="page2">
+        <h2>Rock, Paper, Scissors Game</h2>
+        <button>Game Play</button>
+        <button>Game Start</button>
+    </div>
+    <script>
+       var btn = document.querySelectorAll("button");
+       btn[0].addEventListener("click", ()=>{
+         window.location.href = "gamePlay.html";
+       })
+        btn[1].addEventListener("click", ()=>{
+            window.location.href = "gameStart.html";
+       })
+    </script>
+</body>
+</html>
