@@ -11,16 +11,16 @@
 <body>
     <div class="page2">
         <h2>Rock, Paper, Scissors Game</h2>
-        <button>Game Play</button>
-        <button>Game Start</button>
+        <button>Play Game</button>
+        <button>Exit Game</button>
     </div>
     <script>
        var btn = document.querySelectorAll("button");
        btn[0].addEventListener("click", ()=>{
-         window.location.href = "gamePlay.html";
+         window.location.href = "gameStart.html";
        })
         btn[1].addEventListener("click", ()=>{
-            window.location.href = "gameStart.html";
+            window.close();
        })
     </script>
 </body>
